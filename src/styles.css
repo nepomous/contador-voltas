@@ -1,0 +1,10 @@
+@import url('//fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.voltas {
+    font-size: 288px;
+    font-weight: bold;
+}

@@ -1,29 +1,8 @@
 import React, { useState, useEffect } from 'react'
-
-const MostraVoltas = (props) => {
-  return(
-    <p>
-      {props.voltas} <br />
-      Voltas
-    </p>
-  )
-}
-
-const MostraTempo = (props) => {
-  const tempo = props.tempo
-  const minutos = Math.round(tempo / 60)
-  const segundos = tempo % 60
-  const minutosStr = minutos < 10 ? '0'+minutos : minutos
-  const segundosStr = segundos < 10 ? '0'+segundos : segundos
-  return(
-    <p>
-      {`${minutosStr}:${segundosStr}`} <br />
-      Tempo médio por volta
-    </p>
-  )
-}
-
-const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
+import './styles.css'
+import MostraVoltas from './MostraVoltas'
+import MostraTempo from './MostraTempo'
+import Button from './Button'
 
 function App () {
   const [numVoltas, setNumVoltas] = useState(0)
