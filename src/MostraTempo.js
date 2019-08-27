@@ -7,8 +7,8 @@ const MostraTempo = (props) => {
     const minutosStr = minutos < 10 ? '0'+minutos : minutos
     const segundosStr = segundos < 10 ? '0'+segundos : segundos
     return(
-      <p>
-        {`${minutosStr}:${segundosStr}`} <br />
+      <p className='tempo'>
+        <span>{`${minutosStr}:${segundosStr}`}</span> <br />
         Tempo médio por volta
       </p>
     )
